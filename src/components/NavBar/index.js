@@ -30,9 +30,6 @@ const Navbar = () => {
             <NavItem>
               <NavLinks to="about">Contact</NavLinks>
             </NavItem>
-            <NavItem>
-              <NavLinks to="about">Resume</NavLinks>
-            </NavItem>
           </NavMenu>
           <NavBtn>
             <NavBtnLink to="/resume">Resume</NavBtnLink>
