@@ -1,18 +1,18 @@
-import image1 from "../../images/michael-khaikin.png";
+import image1 from "../../images/programming.svg";
 
 export const homeObjOne = {
   id: "about",
-  lighBg: false,
-  lightText: true,
-  lightTextDesc: true,
-  topLine: "",
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
+  topLine: "Bio",
   heading: "About Me",
-  desc: "Just a little about me and how I got here.",
-  buttonLabel: "About Me",
+  desc: "I'm a sound engineer that turn develeoper",
+  buttonLabel: "About",
   imgStart: false,
   imgSrc: image1,
-  alt: "Michael Khaikin",
+  alt: "About me",
   dark: true,
-  primary: true,
-  darkText: false,
+  primary: false,
+  darkText: true,
 };

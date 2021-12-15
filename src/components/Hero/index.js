@@ -8,9 +8,11 @@ import {
   HeroP,
   ArrowAwrapper,
   Arrow,
+  HeroBtnWrapper,
 } from "./heroElems";
 import Video from "../../video/video.mp4";
 import Typewriter from "typewriter-effect";
+import { Button } from "../ButtonElems";
 
 const Hero = () => {
   return (
@@ -36,6 +38,11 @@ const Hero = () => {
             }}
           />
         </HeroP>
+        <HeroBtnWrapper>
+          <Button to="About" primary="true" dark="true" padding="big">
+            About Me
+          </Button>
+        </HeroBtnWrapper>
         <ArrowAwrapper>
           <Arrow />
         </ArrowAwrapper>

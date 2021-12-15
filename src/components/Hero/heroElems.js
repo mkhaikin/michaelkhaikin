@@ -48,7 +48,7 @@ export const HeroContent = styled.div`
   width: 80%;
   max-width: 1000px;
   position: absolute;
-  padding: 8px 24px;
+  padding: 48px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -90,7 +90,7 @@ export const ArrowAwrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 250px;
+  padding-top: 100px;
   height: 100px;
   width: 100%;
   animation-duration: 2s;
@@ -125,4 +125,10 @@ export const Arrow = styled.p`
   padding: 20px;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+`;
+export const HeroBtnWrapper = styled.div`
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
