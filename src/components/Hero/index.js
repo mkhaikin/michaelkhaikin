@@ -42,6 +42,7 @@ const Hero = () => {
           <Button to="About" primary="true" dark="true" padding="big">
             About Me
           </Button>
+          {/* insert social media icons here */}
         </HeroBtnWrapper>
         <ArrowAwrapper>
           <Arrow />
