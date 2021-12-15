@@ -27,6 +27,8 @@ const InfoSection = ({
   buttonLabel,
   imgSrc,
   alt,
+  primary,
+  dark,
 }) => {
   return (
     <>
