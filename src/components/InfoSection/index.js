@@ -26,19 +26,6 @@ const InfoSection = ({
   imgSrc,
   alt,
 }) => {
-  // const {
-  //   lightBg,
-  //   id,
-  //   imgStart,
-  //   lightText,
-  //   heading,
-  //   darktext,
-  //   desc,
-  //   buttonLabel,
-  //   imgSrc,
-  //   alt,
-  // } = props;
-  console.log("this is props " + imgSrc);
   return (
     <>
       <InfoContainer lightBg={lightBg} id={id}>
