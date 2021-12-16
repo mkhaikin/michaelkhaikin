@@ -34,6 +34,9 @@ const Hero = () => {
                 .pauseFor(1000)
                 .deleteAll()
                 .typeString("I ❤️ Coding")
+                .pauseFor(1000)
+                .deleteAll()
+                .typeString("Let's build something great together.")
                 .start();
             }}
           />
