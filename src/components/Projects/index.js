@@ -8,7 +8,7 @@ import {
   ProjectsH2,
   ProjectsP,
 } from "./ProjectsElems";
-import Icon1 from "../../images/project1.svg";
+import { reactIcon, fullStackIcon, jsIcon } from "../../images";
 
 const Projects = () => {
   return (
@@ -17,25 +17,25 @@ const Projects = () => {
         <ProjectsH1>My Projects</ProjectsH1>
         <ProjectsWrapper>
           <ProjectsCard>
-            <ProjectsIcon src={Icon1} />
+            <ProjectsIcon src={reactIcon} />
             {/* the icon is a github icon maybe even link */}
 
             <ProjectsP>Brief desciption of the project</ProjectsP>
-            <ProjectsH2>Project1</ProjectsH2>
+            <ProjectsH2>React</ProjectsH2>
           </ProjectsCard>
           <ProjectsCard>
-            <ProjectsIcon src={Icon1} />
+            <ProjectsIcon src={fullStackIcon} />
             {/* the icon is a github icon maybe even link */}
 
             <ProjectsP>Brief desciption of the project</ProjectsP>
-            <ProjectsH2>Project2</ProjectsH2>
+            <ProjectsH2>Full-Stack</ProjectsH2>
           </ProjectsCard>
           <ProjectsCard>
-            <ProjectsIcon src={Icon1} />
+            <ProjectsIcon src={jsIcon} />
             {/* the icon is a github icon maybe even link */}
 
             <ProjectsP>Brief desciption of the project</ProjectsP>
-            <ProjectsH2>Project3</ProjectsH2>
+            <ProjectsH2>JS</ProjectsH2>
           </ProjectsCard>
         </ProjectsWrapper>
       </ProjectsContainer>

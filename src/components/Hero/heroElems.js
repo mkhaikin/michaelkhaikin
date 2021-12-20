@@ -6,7 +6,7 @@ export const HeroContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  height: 800px;
+  height: 100vh;
   position: relative;
   z-index: 1;
 
@@ -48,7 +48,7 @@ export const HeroContent = styled.div`
   width: 80%;
   max-width: 1000px;
   position: absolute;
-  padding: 48px;
+  padding: 60px 48px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -87,11 +87,13 @@ export const HeroP = styled.p`
   }
 `;
 export const ArrowAwrapper = styled.div`
+  position: absolute;
+  bottom: -100px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 100px;
-  height: 100px;
+  height: 150px;
   width: 100%;
   animation-duration: 2s;
   animation-iteration-count: infinite;

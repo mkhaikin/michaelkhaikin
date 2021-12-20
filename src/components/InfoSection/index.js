@@ -13,11 +13,13 @@ import {
   ImgWrap,
   Img,
 } from "../InfoSection/InfoSectionElems";
-import { Button } from "../ButtonElems";
+import { BtnLink } from "../ButtonElems";
+// import { NavBtn, NavBtnLink } from "../NavBar/NavbarElems";
 
 const InfoSection = ({
-  lightBg,
   id,
+  to,
+  lightBg,
   imgStart,
   lightText,
   topLine,
@@ -27,9 +29,11 @@ const InfoSection = ({
   buttonLabel,
   imgSrc,
   alt,
+  lightTextDesc,
   primary,
   dark,
 }) => {
+  // const linkTo = String(to);
   return (
     <>
       <InfoContainer lightBg={lightBg} id={id}>
@@ -41,18 +45,18 @@ const InfoSection = ({
                 <Heading lightText={lightText}>{heading}</Heading>
                 <SubTitle darkText={darkText}>{desc}</SubTitle>
                 <BtnWrap>
-                  <Button
-                    to="home"
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    exact="true"
-                    offset={-80}
+                  <BtnLink
+                    to={String(to)}
+                    // smooth={true}
+                    // duration={500}
+                    // spy={true}
+                    // exact="true"
+                    // offset={-80}
                     primary={primary ? 1 : 0}
                     dark={dark ? 1 : 0}
                   >
                     {buttonLabel}
-                  </Button>
+                  </BtnLink>
                 </BtnWrap>
               </TextWrapper>
             </Coloumn1>
