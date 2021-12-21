@@ -6,6 +6,7 @@ import {
   HeroContent,
   HeroH1,
   HeroP,
+  ArrowContainer,
   ArrowAwrapper,
   Arrow,
 } from "./heroElems";
@@ -32,7 +33,7 @@ const Hero = () => {
                 .typeString("Full-Stack Developer")
                 .pauseFor(1000)
                 .deleteAll()
-                .typeString("I ❤️ Coding")
+                .typeString("I❤️Coding")
                 .pauseFor(1000)
                 .deleteAll()
                 .typeString("Let's build something great together.")
@@ -40,10 +41,18 @@ const Hero = () => {
             }}
           />
         </HeroP>
-
-        <ArrowAwrapper>
-          <Arrow />
-        </ArrowAwrapper>
+        <ArrowContainer
+          to="about"
+          smooth={true}
+          duration={500}
+          spy={true}
+          exact="true"
+          offset={-80}
+        >
+          <ArrowAwrapper>
+            <Arrow />
+          </ArrowAwrapper>
+        </ArrowContainer>
       </HeroContent>
     </HeroContainer>
   );

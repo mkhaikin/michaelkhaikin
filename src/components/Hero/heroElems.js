@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link as LinkS } from "react-scroll";
 
 export const HeroContainer = styled.div`
   background: #0c0c0c;
@@ -9,6 +10,7 @@ export const HeroContainer = styled.div`
   height: 100vh;
   position: relative;
   z-index: 1;
+  min-height: 700px;
 
   :before {
     content: "";
@@ -86,15 +88,19 @@ export const HeroP = styled.p`
     font-size: 18px;
   }
 `;
+export const ArrowContainer = styled(LinkS)`
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-top: 50px;
+`;
 export const ArrowAwrapper = styled.div`
-  position: absolute;
-  bottom: -100px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 100px;
   height: 150px;
-  width: 100%;
+  width: 150px;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-name: bounce;
