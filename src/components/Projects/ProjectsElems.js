@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link as LinkR } from "react-router-dom";
 
 export const ProjectsContainer = styled.div`
   height: 800px;
@@ -30,7 +31,7 @@ export const ProjectsWrapper = styled.div`
     padding: 0 20px;
   }
 `;
-export const ProjectsCard = styled.div`
+export const ProjectsCard = styled(LinkR)`
   background: #fff;
   display: flex;
   flex-direction: column-reverse;
@@ -41,6 +42,8 @@ export const ProjectsCard = styled.div`
   padding: 30px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  color: #2f2e41;
   &:hover {
     transform: scale(1.03);
     transition: all 0.2s ease-in-out;
@@ -54,7 +57,7 @@ export const ProjectsIcon = styled.img`
 `;
 export const ProjectsH1 = styled.h1`
   font-size: 2.5rem;
-  color: #010606;
+  color: #2f2e41;
   margin-bottom: 64px;
 
   @media screen and (max-width: 480px) {

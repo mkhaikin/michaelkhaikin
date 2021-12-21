@@ -2,7 +2,8 @@ import React from "react";
 import {
   HeroContainer,
   HeroBg,
-  VideoBg,
+  ImageBg,
+  // VideoBg,
   HeroContent,
   HeroH1,
   HeroP,
@@ -10,7 +11,7 @@ import {
   ArrowAwrapper,
   Arrow,
 } from "./heroElems";
-import Video from "../../video/video.mp4";
+// import Video from "../../video/video.mp4";
 import Typewriter from "typewriter-effect";
 // import { Button } from "../ButtonElems";
 
@@ -18,9 +19,10 @@ const Hero = () => {
   return (
     <HeroContainer id="Home">
       <HeroBg>
-        <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
+        {/* <VideoBg autoPlay loop muted src={Video} type="video/mp4" /> */}
+        <ImageBg />
       </HeroBg>
-      <HeroContent>
+      <HeroContent id="HeroContent">
         <HeroH1 className="h1">Hello World,</HeroH1>
         <HeroH1>I'm Michael Khaikin</HeroH1>
         <HeroP>
@@ -33,10 +35,10 @@ const Hero = () => {
                 .typeString("Full-Stack Developer")
                 .pauseFor(1000)
                 .deleteAll()
-                .typeString("I❤️Coding")
+                .typeString("I <3 Coding")
                 .pauseFor(1000)
                 .deleteAll()
-                .typeString("Let's build something great together.")
+                .typeString("Let's explore together.")
                 .start();
             }}
           />

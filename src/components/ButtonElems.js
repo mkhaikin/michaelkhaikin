@@ -25,7 +25,7 @@ export const Button = styled.a`
 
 export const BtnLink = styled(LinkR)`
   border-radius: 50px;
-  background: ${({ primary }) => (primary ? "#01BF71" : "#010606")};
+  background: ${({ primary }) => (primary ? "#5acfd2" : "#f92b5e")};
   color: ${({ dark }) => (dark ? "#010606" : "#fff")};
   white-space: nowrap;
   padding: 8px 22px;
@@ -39,7 +39,7 @@ export const BtnLink = styled(LinkR)`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: darkgrey;
+    background: #3f3d56;
     color: #010606;
   }
 `;

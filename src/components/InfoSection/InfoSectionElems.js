@@ -2,7 +2,11 @@ import styled from "styled-components";
 
 export const InfoContainer = styled.div`
   color: #fff;
-  background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#232a34")};
+  background: ${({ lightBg }) =>
+    lightBg
+      ? // ? "linear-gradient(180deg, rgba(131,227,228,1) 0%, rgba(255,255,255,0) 13%)"
+        "radial-gradient(circle, rgba(131,227,228,1) 0%, rgba(255,255,255,0) 65%)"
+      : "linear-gradient(270deg, rgba(249,43,94,1) 22%, rgba(43,249,198,1) 100%)"};
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -51,7 +55,7 @@ export const TextWrapper = styled.div`
   /* padding-bottom: 60px; */
 `;
 export const TopLine = styled.p`
-  color: #01bf71;
+  color: #2f2e41;
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;

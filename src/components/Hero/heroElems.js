@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link as LinkS } from "react-scroll";
+import { HeroBgImg } from "../../images";
 
 export const HeroContainer = styled.div`
   background: #0c0c0c;
@@ -21,10 +22,11 @@ export const HeroContainer = styled.div`
     bottom: 0;
     background: linear-gradient(
         180deg,
-        rgba(0, 0, 0, 0.2) 0%,
-        rgba(0, 0, 0, 0.6) 100%
+        rgba(63, 61, 86, 0.3) 0%,
+        rgba(249, 43, 94, 0.4) 50%,
+        rgba(43, 249, 198, 0.3) 100%
       ),
-      linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+      linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, transparent 100%);
     z-index: 2;
   }
 `;
@@ -38,19 +40,27 @@ export const HeroBg = styled.div`
   height: 100%;
   overflow: hidden;
 `;
-export const VideoBg = styled.video`
+export const ImageBg = styled.video`
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
   background: #232a34;
+  background-image: url(${HeroBgImg});
 `;
+// export const VideoBg = styled.video`
+//   width: 100%;
+//   height: 100%;
+//   -o-object-fit: cover;
+//   object-fit: cover;
+//   background: #232a34;
+// `;
 export const HeroContent = styled.div`
   z-index: 5;
   width: 80%;
   max-width: 1000px;
   position: absolute;
-  padding: 60px 48px;
+  padding: 60px 32px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;

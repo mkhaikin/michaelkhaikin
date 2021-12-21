@@ -1,5 +1,5 @@
 import image1 from "../../images/programming.svg";
-import image2 from "../../images/dev.svg";
+import image2 from "../../images/projects.svg";
 import image3 from "../../images/contact.svg";
 
 export const homeObjOne = {
@@ -34,7 +34,7 @@ export const homeObjTwo = {
   imgSrc: image2,
   alt: "Projects",
   dark: true,
-  primary: true,
+  primary: false,
   darkText: false,
 };
 
