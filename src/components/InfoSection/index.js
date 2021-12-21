@@ -40,7 +40,7 @@ const InfoSection = ({
         <InfoWrapper>
           <InfoRow imgStart={imgStart} className="row">
             <Coloumn1>
-              <TextWrapper>
+              <TextWrapper className="TextWrapper">
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{heading}</Heading>
                 <SubTitle darkText={darkText}>{desc}</SubTitle>
