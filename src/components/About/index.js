@@ -73,7 +73,7 @@ const About = () => {
               </SkillIcon>
               <SkillIcon>
                 <FaWordpress style={{ color: "#696969" }} />
-                <span>PostgreSQL</span>
+                <span>WordPress</span>
               </SkillIcon>
             </SkillIconsWrap>
           </SkillsWrapper>

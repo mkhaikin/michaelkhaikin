@@ -16,20 +16,20 @@ const Projects = () => {
       <ProjectsContainer>
         <ProjectsH1>Projects</ProjectsH1>
         <ProjectsWrapper>
-          <ProjectsCard to="/reactprojects">
+          <ProjectsCard to="react">
             <ProjectsIcon src={reactIcon} />
             <ProjectsP>Brief desciption of the project</ProjectsP>
             <ProjectsH2>React</ProjectsH2>
           </ProjectsCard>
-          <ProjectsCard to="/reactprojects">
+          <ProjectsCard to="/projects/fullstack">
             <ProjectsIcon src={fullStackIcon} />
             <ProjectsP>Brief desciption of the project</ProjectsP>
             <ProjectsH2>Full-Stack</ProjectsH2>
           </ProjectsCard>
-          <ProjectsCard to="/reactprojects">
+          <ProjectsCard to="/javascript">
             <ProjectsIcon src={jsIcon} />
             <ProjectsP>Brief desciption of the project</ProjectsP>
-            <ProjectsH2>JS</ProjectsH2>
+            <ProjectsH2>HTML/JS/CSS</ProjectsH2>
           </ProjectsCard>
         </ProjectsWrapper>
       </ProjectsContainer>
