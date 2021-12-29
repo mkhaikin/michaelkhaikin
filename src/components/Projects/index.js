@@ -1,39 +1,24 @@
 import React from "react";
-import {
-  ProjectsContainer,
-  ProjectsWrapper,
-  ProjectsCard,
-  ProjectsIcon,
-  ProjectsH1,
-  ProjectsH2,
-  ProjectsP,
-} from "./ProjectsElems";
-import { reactIcon, fullStackIcon, jsIcon } from "../../images";
 
-const Projects = () => {
+const Projects = ({ items }) => {
   return (
-    <>
-      <ProjectsContainer>
-        <ProjectsH1>Projects</ProjectsH1>
-        <ProjectsWrapper>
-          <ProjectsCard to="react">
-            <ProjectsIcon src={reactIcon} />
-            <ProjectsP>Brief desciption of the project</ProjectsP>
-            <ProjectsH2>React</ProjectsH2>
-          </ProjectsCard>
-          <ProjectsCard to="/projects/fullstack">
-            <ProjectsIcon src={fullStackIcon} />
-            <ProjectsP>Brief desciption of the project</ProjectsP>
-            <ProjectsH2>Full-Stack</ProjectsH2>
-          </ProjectsCard>
-          <ProjectsCard to="/javascript">
-            <ProjectsIcon src={jsIcon} />
-            <ProjectsP>Brief desciption of the project</ProjectsP>
-            <ProjectsH2>HTML/JS/CSS</ProjectsH2>
-          </ProjectsCard>
-        </ProjectsWrapper>
-      </ProjectsContainer>
-    </>
+    <div className="section-center">
+      {items.map((menuItem) => {
+        const { id, title, img, price, desc } = menuItem;
+        return (
+          <article key={id} className="menu-item">
+            <img src={img} alt={title} className="photo" />
+            <div className="item-info">
+              <header>
+                <h4>{title}</h4>
+                <h4 className="price">{price}</h4>
+              </header>
+              <p className="item-text">{desc}</p>
+            </div>
+          </article>
+        );
+      })}
+    </div>
   );
 };
 

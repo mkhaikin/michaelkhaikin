@@ -1,36 +1,6 @@
 import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 
-export const ProjectsContainer = styled.div`
-  height: 800px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: #f9f9f9;
-
-  @media screen and (max-width: 768px) {
-    height: 1100px;
-  }
-
-  @media screen and (max-width: 480px) {
-    height: 1300px;
-  }
-`;
-export const ProjectsWrapper = styled.div`
-  max-width: 1300px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
-  grid-gap: 16px;
-  padding: 0 50px;
-
-  @media screen and (max-width: 768px) {
-    grid-template-columns: 1fr;
-    padding: 0 20px;
-  }
-`;
 export const ProjectsCard = styled(LinkR)`
   background: #fff;
   display: flex;
