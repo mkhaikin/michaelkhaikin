@@ -18,21 +18,17 @@ import {
 
 const Footer = () => {
   return (
-    <FooterContainer>
-      <FooterWrap>
+    <FooterContainer className="FooterContainer">
+      <FooterWrap className="FooterWrap">
         <FooterLinksContainer>
-          <FooterLinksWrapper>
+          <FooterLinksWrapper className="FooterLinksWrapper">
+            {/* <FooterLinkTitle>Menu</FooterLinkTitle> */}
             <FooterLinksItems>
-              <FooterLinkTitle>Home </FooterLinkTitle>
-              <FooterLink to="/#about">About</FooterLink>
-              <FooterLink to="/#projects">Projects</FooterLink>
-              <FooterLink to="/#contact">Contact</FooterLink>
-            </FooterLinksItems>
-            <FooterLinksItems>
-              <FooterLinkTitle>Projects </FooterLinkTitle>
-              <FooterLink to="/projects/about">React</FooterLink>
-              <FooterLink to="/projects">Full-Stack</FooterLink>
-              <FooterLink to="/contact">JS</FooterLink>
+              <FooterLink to="/">Home</FooterLink>
+              <FooterLink to="/about">About</FooterLink>
+              <FooterLink to="/projects">Projects</FooterLink>
+              <FooterLink to="/contact">Contact</FooterLink>
+              <FooterLink to="/resume">Resume</FooterLink>
             </FooterLinksItems>
           </FooterLinksWrapper>
         </FooterLinksContainer>

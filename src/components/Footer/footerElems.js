@@ -5,7 +5,7 @@ export const FooterContainer = styled.footer`
   background-color: #2f2e41;
 `;
 export const FooterWrap = styled.div`
-  padding: 48px 24px;
+  padding: 0 24px 48px 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,6 +14,7 @@ export const FooterWrap = styled.div`
   margin: 0 auto;
 `;
 export const FooterLinksContainer = styled.div`
+  width: 100%;
   display: flex;
   justify-content: center;
 
@@ -23,29 +24,32 @@ export const FooterLinksContainer = styled.div`
 `;
 export const FooterLinksWrapper = styled.div`
   display: flex;
-
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
   @media screen and (max-width: 820px) {
     flex-direction: column;
   }
 `;
 export const FooterLinksItems = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
   margin: 16px;
   text-align: left;
-  width: 160px;
+  width: 100%;
   box-sizing: border-box;
   color: #fff;
 
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: 786px) {
     margin: 0;
     padding: 10px;
     width: 100%;
+    flex-direction: column;
   }
 `;
 export const FooterLinkTitle = styled.h1`
-  font-size: 14px;
   margin-bottom: 16px;
 `;
 export const FooterLink = styled(Link)`
@@ -53,7 +57,7 @@ export const FooterLink = styled(Link)`
   text-decoration: none;
   margin-bottom: 0.5rem;
   font-size: 14px;
-
+  padding: 10px;
   &:hover {
     color: #01bf71;
     transition: 0.3s ease-out;
