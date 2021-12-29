@@ -1,4 +1,5 @@
 import React from "react";
+import { NavBtn, NavBtnLink } from "./projectsElems";
 
 const Projects = ({ items }) => {
   return (
@@ -14,6 +15,9 @@ const Projects = ({ items }) => {
                 <h4 className="price">{price}</h4>
               </header>
               <p className="item-text">{desc}</p>
+              <NavBtn>
+                <NavBtnLink to={"project/" + id}>More</NavBtnLink>
+              </NavBtn>
             </div>
           </article>
         );

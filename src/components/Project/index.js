@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 
 const Project = ({ items }) => {
   let { userId } = useParams();
-  let id = userId;
+  let id = userId - 1;
   return (
     <section className="menu section">
       {/* key={id} */}

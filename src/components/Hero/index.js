@@ -11,15 +11,15 @@ import {
   ArrowAwrapper,
   Arrow,
 } from "./heroElems";
-// import Video from "../../video/video.mp4";
+// option for video import Video from "../../video/video.mp4";
 import Typewriter from "typewriter-effect";
-// import { Button } from "../ButtonElems";
 
 const Hero = () => {
   return (
     <HeroContainer id="Home">
       <HeroBg>
-        {/* <VideoBg autoPlay loop muted src={Video} type="video/mp4" /> */}
+        {/* option for video
+        <VideoBg autoPlay loop muted src={Video} type="video/mp4" /> */}
         <ImageBg />
       </HeroBg>
       <HeroContent id="HeroContent">

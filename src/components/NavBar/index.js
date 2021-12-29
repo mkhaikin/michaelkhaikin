@@ -11,6 +11,7 @@ import {
   NavBtn,
   NavBtnLink,
 } from "./NavbarElems";
+
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
 
@@ -35,44 +36,17 @@ const Navbar = ({ toggle }) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks
-                to="about"
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-                offset={-80}
-              >
-                About
-              </NavLinks>
+              <NavLinks to="about">About</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks
-                to="projects"
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-                offset={-80}
-              >
-                Projects
-              </NavLinks>
+              <NavLinks to="projects">Projects</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks
-                to="contact"
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-                offset={-80}
-              >
-                Contact
-              </NavLinks>
+              <NavLinks to="contact">Contact</NavLinks>
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="/projects">Resume</NavBtnLink>
+            <NavBtnLink to="/Resume">Resume</NavBtnLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>

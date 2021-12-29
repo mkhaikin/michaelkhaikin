@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import styled from "styled-components";
+import Header from "../components/Header";
 import Projects from "../components/Projects";
 import Categories from "../components/Categories";
 import projects from "../components/data";
@@ -22,48 +24,33 @@ const ProjectsPage = () => {
   };
 
   return (
-    <main>
-      <section className="menu section">
-        <div className="title">
-          <h2>Projects</h2>
-          <div className="underline"></div>
-        </div>
-        <Categories categories={categories} filterItems={filterItems} />
-        <Projects items={menuItems} />
-      </section>
-    </main>
+    <Container>
+      <Header title={"Projects"} />
+      <main>
+        <section className="menu section">
+          {/* <div className="title">
+            <h2>Projects</h2>
+            <div className="underline"></div>
+          </div> */}
+          <Categories categories={categories} filterItems={filterItems} />
+          <Projects items={menuItems} />
+        </section>
+      </main>
+    </Container>
   );
 };
 
-// const ProjectsContainer = styled.div`
-//   height: 800px;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   background: #f9f9f9;
-
-//   @media screen and (max-width: 768px) {
-//     height: 1100px;
-//   }
-
-//   @media screen and (max-width: 480px) {
-//     height: 1300px;
-//   }
-// `;
-// export const ProjectsWrapper = styled.div`
-//   max-width: 1300px;
-//   margin: 0 auto;
-//   display: grid;
-//   grid-template-columns: 1fr 1fr 1fr;
-//   align-items: center;
-//   grid-gap: 16px;
-//   padding: 0 50px;
-
-//   @media screen and (max-width: 768px) {
-//     grid-template-columns: 1fr;
-//     padding: 0 20px;
-//   }
-// `;
+const Container = styled.div`
+  /* background: #efefef; */
+  padding: 200px 30px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  min-height: 700px; */
+`;
 
 export default ProjectsPage;

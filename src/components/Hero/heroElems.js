@@ -39,8 +39,9 @@ export const HeroBg = styled.div`
   width: 100%;
   height: 100%;
   overflow: hidden;
+  z-index: 1;
 `;
-export const ImageBg = styled.video`
+export const ImageBg = styled.img`
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -48,6 +49,7 @@ export const ImageBg = styled.video`
   background: #232a34;
   background-image: url(${HeroBgImg});
 `;
+// Option for video
 // export const VideoBg = styled.video`
 //   width: 100%;
 //   height: 100%;

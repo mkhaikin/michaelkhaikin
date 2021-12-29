@@ -1,19 +1,24 @@
 import React from "react";
+import styled from "styled-components";
+import Header from "../components/Header";
 import Project from "../components/Project";
 import projects from "../components/data";
 
 const ProjectPage = () => {
   return (
-    <main>
-      <section className="menu section">
-        <div className="title">
-          <h2>Project Item</h2>
-          <div className="underline"></div>
-        </div>
-      </section>
-      <Project items={projects} />
-    </main>
+    <Container>
+      <Header title={"Project Info"} />
+      <main>
+        <section className="section">
+          <Project items={projects} />
+        </section>
+      </main>
+    </Container>
   );
 };
+
+const Container = styled.div`
+  padding: 200px 30px;
+`;
 
 export default ProjectPage;
