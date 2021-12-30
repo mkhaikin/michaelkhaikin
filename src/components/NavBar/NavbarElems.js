@@ -15,8 +15,12 @@ export const Nav = styled.nav`
   top: 0;
   z-index: 10;
 
+  transition-property: background;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-i;
+
   @media screen and (max-width: 960px) {
-    transition: 0ms.8s all ease;
+    transition: 0.8s all ease;
   }
 `;
 export const NavbarContainer = styled.div`
