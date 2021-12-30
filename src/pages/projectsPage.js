@@ -27,10 +27,8 @@ const ProjectsPage = () => {
     <Container>
       <Header title={"Projects"} />
       <main>
-        <section className="menu section">
-          <Categories categories={categories} filterItems={filterItems} />
-          <Projects items={menuItems} />
-        </section>
+        <Categories categories={categories} filterItems={filterItems} />
+        <Projects items={menuItems} />
       </main>
     </Container>
   );
