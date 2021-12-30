@@ -1,6 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./app.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useLocation,
+} from "react-router-dom";
 import Navbar from "./components/NavBar";
 import Sidebar from "./components/Sidebar";
 import Footer from "./components/Footer";
@@ -12,6 +17,16 @@ import ProjectPage from "./pages/singleProjectPage";
 import ResumePage from "./pages/resumePage";
 import Error from "./components/404";
 
+export function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 function App() {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => {
@@ -20,6 +35,7 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <Routes>
