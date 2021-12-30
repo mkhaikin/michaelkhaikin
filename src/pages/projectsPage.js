@@ -37,16 +37,7 @@ const ProjectsPage = () => {
 };
 
 const Container = styled.div`
-  /* background: #efefef; */
   padding: 200px 30px;
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  height: 100vh;
-  position: relative;
-  z-index: 1;
-  min-height: 700px; */
 `;
 
 export default ProjectsPage;

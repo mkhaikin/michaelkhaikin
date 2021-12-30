@@ -1,13 +1,13 @@
 import React from "react";
 import Header from "../components/Header";
 
-const ContactPage = () => {
+const ResumePage = () => {
   return (
     <div className="container">
-      <Header title={"Contact"} />
+      <Header title={"Resume"} />
       <main>
         <section className="section">
-          <h2>contact</h2>
+          <h2>asdasd</h2>
           <p>asda</p>
         </section>
       </main>
@@ -15,4 +15,4 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage;
+export default ResumePage;

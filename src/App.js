@@ -5,11 +5,12 @@ import Navbar from "./components/NavBar";
 import Sidebar from "./components/Sidebar";
 import Footer from "./components/Footer";
 import Home from "./pages";
-import ProjectsPage from "./pages/projectsPage";
-import ProjectPage from "./pages/ProjectPage";
-import Error from "./components/404";
-
 import AboutPage from "./pages/aboutPage";
+import ContactPage from "./pages/contactPage";
+import ProjectsPage from "./pages/projectsPage";
+import ProjectPage from "./pages/singleProjectPage";
+import ResumePage from "./pages/resumePage";
+import Error from "./components/404";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,9 +24,11 @@ function App() {
       <Navbar toggle={toggle} />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="about" element={<AboutPage />} />
         <Route path="projects" element={<ProjectsPage />} />
         <Route path="projects/project/:userId" element={<ProjectPage />} />
-        <Route path="about" element={<AboutPage />} />
+        <Route path="contact" element={<ContactPage />} />
+        <Route path="resume" element={<ResumePage />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />

@@ -6,19 +6,15 @@ import projects from "../components/data";
 
 const ProjectPage = () => {
   return (
-    <Container>
+    <div className="container">
       <Header title={"Project Info"} />
       <main>
         <section className="section">
           <Project items={projects} />
         </section>
       </main>
-    </Container>
+    </div>
   );
 };
-
-const Container = styled.div`
-  padding: 200px 30px;
-`;
 
 export default ProjectPage;

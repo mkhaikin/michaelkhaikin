@@ -18,7 +18,7 @@ export const ImageBg = styled.div`
   height: 100%;
   /* -o-object-fit: cover;
   object-fit: cover; */
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, transparent 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, transparent 90%);
   /* background-image: url(${HeaderBgImg}); */
 `;
 
