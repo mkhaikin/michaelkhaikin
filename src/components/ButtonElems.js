@@ -40,6 +40,6 @@ export const BtnLink = styled(LinkR)`
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #3f3d56;
-    color: #010606;
+    color: #0efefe;
   }
 `;

@@ -2,11 +2,12 @@ import styled from "styled-components";
 
 export const InfoContainer = styled.div`
   color: #fff;
+
   background: ${({ lightBg }) =>
     lightBg
       ? // ? "linear-gradient(180deg, rgba(131,227,228,1) 0%, rgba(255,255,255,0) 13%)"
-        "radial-gradient(circle, rgba(131,227,228,1) 0%, rgba(255,255,255,0) 65%)"
-      : "linear-gradient(270deg, rgba(249,43,94,1) 22%, rgba(43,249,198,1) 100%)"};
+        "radial-gradient(circle, rgba(38,194,213,1) 0%, rgba(201,14,161,0) 100%)"
+      : "radial-gradient(circle, rgba(38,213,106,1) 0%, rgba(201,14,161,0) 100%)"};
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -68,7 +69,7 @@ export const Heading = styled.h1`
   font-size: 48px;
   line-height: 1.1;
   font-weight: bolder;
-  color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
+  color: ${({ lightText }) => (lightText ? "#9517ff" : "#010606")};
 
   @media screen and (max-width: 480px) {
     font-size: 32px;
@@ -78,6 +79,7 @@ export const SubTitle = styled.p`
   max-width: 440px;
   margin-bottom: 36px;
   font-size: 18px;
+  font-weight: 600;
   line-height: 24px;
   color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
 `;

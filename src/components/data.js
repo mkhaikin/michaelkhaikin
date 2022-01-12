@@ -1,7 +1,7 @@
 const menu = [
   {
     id: 1,
-    title: "Tabs",
+    title: "React-Tabs",
     category: "React",
     gitHub: "www.github.com",
     img: "./images/item-1.jpeg",

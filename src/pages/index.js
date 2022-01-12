@@ -8,19 +8,23 @@ import {
 } from "../components/InfoSection/homeObj";
 
 const Home = () => {
-  // const [isOpen, setIsOpen] = useState(false);
-  // const toggle = () => {
-  //   setIsOpen(!isOpen);
-  // };
-
   return (
     <>
-      {/* <Sidebar isOpen={isOpen} toggle={toggle} />
-      <Navbar toggle={toggle} /> */}
-      <Hero />
-      <InfoSection {...homeObjOne} />
-      <InfoSection {...homeObjTwo} />
-      <InfoSection {...homeObjThree} />
+      <div className="infoSectionsWrapper">
+        <div className="SectionsWrapper">
+          <Hero />
+        </div>
+
+        <div className="SectionsWrapper">
+          <InfoSection {...homeObjOne} />
+        </div>
+        <div className="SectionsWrapper">
+          <InfoSection {...homeObjTwo} />
+        </div>
+        <div className="SectionsWrapper">
+          <InfoSection {...homeObjThree} />
+        </div>
+      </div>
     </>
   );
 };

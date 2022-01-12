@@ -9,7 +9,7 @@ import {
   Links,
   GitHub,
   Site,
-} from "./projectElems";
+} from "./singleProjectElems";
 
 const Project = ({ items }) => {
   let { userId } = useParams();

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import styled from "styled-components";
 import Header from "../components/Header";
 import Projects from "../components/Projects";
 import Categories from "../components/Categories";
@@ -24,18 +23,14 @@ const ProjectsPage = () => {
   };
 
   return (
-    <Container>
+    <div className="container">
       <Header title={"Projects"} />
       <main>
         <Categories categories={categories} filterItems={filterItems} />
         <Projects items={menuItems} />
       </main>
-    </Container>
+    </div>
   );
 };
-
-const Container = styled.div`
-  padding: 200px 30px;
-`;
 
 export default ProjectsPage;

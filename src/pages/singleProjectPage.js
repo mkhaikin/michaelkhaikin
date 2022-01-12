@@ -1,7 +1,6 @@
 import React from "react";
-import styled from "styled-components";
 import Header from "../components/Header";
-import Project from "../components/Project";
+import SingleProject from "../components/SingleProject";
 import projects from "../components/data";
 
 const ProjectPage = () => {
@@ -10,7 +9,7 @@ const ProjectPage = () => {
       <Header title={"Project Info"} />
       <main>
         <section className="section">
-          <Project items={projects} />
+          <SingleProject items={projects} />
         </section>
       </main>
     </div>

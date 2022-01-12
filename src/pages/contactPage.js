@@ -1,16 +1,12 @@
 import React from "react";
 import Header from "../components/Header";
+import ContactUs from "../components/ContactUs";
 
 const ContactPage = () => {
   return (
     <div className="container">
       <Header title={"Contact"} />
-      <main>
-        <section className="section">
-          <h2>contact</h2>
-          <p>asda</p>
-        </section>
-      </main>
+      <ContactUs />
     </div>
   );
 };

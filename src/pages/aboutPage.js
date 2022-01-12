@@ -6,11 +6,7 @@ const AboutPage = () => {
   return (
     <div className="container">
       <Header title={"About"} />
-      <main>
-        <section className="section">
-          <About />
-        </section>
-      </main>
+      <About />
     </div>
   );
 };

@@ -18,8 +18,12 @@ export const ImageBg = styled.div`
   height: 100%;
   /* -o-object-fit: cover;
   object-fit: cover; */
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 5%, transparent 60%);
-  /* background-image: url(${HeaderBgImg}); */
+  background-image: url(${HeaderBgImg});
+  background: linear-gradient(
+    180deg,
+    rgba(38, 213, 106, 1) 0%,
+    rgba(62, 201, 14, 0) 100%
+  );
 `;
 
 export const Title = styled.div`

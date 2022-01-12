@@ -16,7 +16,7 @@ export const homeObjOne = {
   imgSrc: image1,
   alt: "About me",
   dark: false,
-  primary: true,
+  primary: false,
   darkText: true,
 };
 
@@ -24,8 +24,8 @@ export const homeObjTwo = {
   id: "projects",
   to: "/projects",
   lightBg: false,
-  lightText: true,
-  lightTextDesc: true,
+  lightText: false,
+  lightTextDesc: false,
   topLine: "work",
   heading: "Projects",
   desc: "Here are some of my personal projects",
@@ -35,7 +35,7 @@ export const homeObjTwo = {
   alt: "Projects",
   dark: true,
   primary: false,
-  darkText: false,
+  darkText: true,
 };
 
 export const homeObjThree = {
@@ -52,6 +52,6 @@ export const homeObjThree = {
   imgSrc: image3,
   alt: "Contact me",
   dark: true,
-  primary: true,
+  primary: false,
   darkText: true,
 };
